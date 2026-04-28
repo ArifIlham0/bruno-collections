@@ -1,0 +1,21 @@
+info:
+  name: All
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: "{{BASE_URL}}/live-harvest/?status=LIVE"
+  params:
+    - name: status
+      value: LIVE
+      type: query
+  auth:
+    type: bearer
+    token: "{{TOKEN}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
