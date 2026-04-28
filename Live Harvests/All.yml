@@ -5,10 +5,10 @@ info:
 
 http:
   method: GET
-  url: "{{BASE_URL}}/live-harvest/?status=LIVE"
+  url: "{{BASE_URL}}/live-harvest/?status=STOPPED"
   params:
     - name: status
-      value: LIVE
+      value: STOPPED
       type: query
   auth:
     type: bearer

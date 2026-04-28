@@ -1,0 +1,26 @@
+info:
+  name: Create
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/honey-batch/"
+  body:
+    type: json
+    data: |-
+      {
+        "bottling_id": 0,
+        "brand_id": 0,
+        "quantity": 20,
+        "bottle_size_ml": 250
+      }
+  auth:
+    type: bearer
+    token: "{{TOKEN}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
