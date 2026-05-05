@@ -1,0 +1,29 @@
+info:
+  name: Upload
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{BASE_URL_MEDIA}}/upload"
+  headers:
+    - name: ""
+      value: ""
+  body:
+    type: multipart-form
+    data:
+      - name: files
+        type: file
+        value:
+          - /Users/Ilham/Downloads/sample_pdf.pdf
+      - name: files
+        type: file
+        value:
+          - /Users/Ilham/Downloads/payment_proof.png
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

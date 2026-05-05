@@ -1,0 +1,17 @@
+info:
+  name: Statistic AI
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/mentor/fetch-statistical-analysis/"
+  auth:
+    type: bearer
+    token: "{{TOKEN}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

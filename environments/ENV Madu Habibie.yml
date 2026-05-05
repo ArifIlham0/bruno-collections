@@ -4,3 +4,5 @@ variables:
     value: https://7dee-103-121-169-137.ngrok-free.app/api/sumatran-honey-gold/v1
   - secret: true
     name: TOKEN
+  - name: BASE_URL_MEDIA
+    value: https://storage.habibie.co.id

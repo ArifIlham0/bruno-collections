@@ -1,0 +1,27 @@
+info:
+  name: Create
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/user/"
+  body:
+    type: json
+    data: |-
+      {
+        "email": "teacher6@gmail.com",
+        "first_name": "Teacher 6",
+        "username": "teacher6",
+        "password": "Lalala123",
+        "is_staff": false,
+        "is_superuser": false,
+        "id_role": 5
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
