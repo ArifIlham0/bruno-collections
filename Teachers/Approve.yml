@@ -1,20 +1,21 @@
 info:
-  name: Login
+  name: Approve
   type: http
-  seq: 1
+  seq: 3
 
 http:
   method: POST
-  url: "{{BASE_URL}}/authentication/login/"
+  url: "{{BASE_URL}}/teacher/approve-teacher/"
   body:
     type: json
-    data: |+
+    data: |-
       {
-        "email_or_username": "teachernotactive@gmail.com",
+        "teacher_id": 2,
         "password": "Lalala123"
       }
-
-  auth: inherit
+  auth:
+    type: bearer
+    token: "{{TOKEN}}"
 
 settings:
   encodeUrl: true

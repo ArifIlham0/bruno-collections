@@ -10,13 +10,13 @@ http:
     type: json
     data: |-
       {
-        "email": "teacher6@gmail.com",
-        "first_name": "Teacher 6",
-        "username": "teacher6",
+        "email": "testmentor2@gmail.com",
+        "first_name": "Test Mentor 2",
+        "username": "testmentor2",
         "password": "Lalala123",
         "is_staff": false,
         "is_superuser": false,
-        "id_role": 5
+        "id_role": 4
       }
   auth: inherit
 

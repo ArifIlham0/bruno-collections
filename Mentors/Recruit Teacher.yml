@@ -1,0 +1,23 @@
+info:
+  name: Recruit Teacher
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/mentor/recruit-teacher/"
+  body:
+    type: json
+    data: |-
+      {
+        "teacher_id": 6
+      }
+  auth:
+    type: bearer
+    token: "{{TOKEN}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

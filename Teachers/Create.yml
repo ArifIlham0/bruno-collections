@@ -11,20 +11,21 @@ http:
     data:
       - name: full_name
         type: text
-        value: Teacher 8
+        value: Teacher Belom Aktif 8
       - name: school
         type: text
-        value: SMAN 2 Babelan
+        value: SMAN 3 Tambun
       - name: email
         type: text
-        value: teacher8@gmail.com
+        value: teachernotactive8@gmail.com
       - name: phone_number
         type: text
-        value: "087875686341"
+        value: "087875686349"
       - name: files
         type: file
         value:
-          - /Users/Ilham/Downloads/logo_pkk.png
+          - /Users/dna/Downloads/banner.png
+        disabled: true
   auth: inherit
 
 settings:
